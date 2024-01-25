@@ -1,8 +1,8 @@
 const resList = [
   {
-    id: 1,
     restaurant: {
       name: "KFC",
+      id: 1,
       img: "https://b.zmtcdn.com/data/pictures/7/20287/825ff4ef3e2c838e767392ca8de5cefd.jpg?fit=around|750:500&crop=750:500;*,*",
       location: {
         address: "456 Zomato Avenue",
@@ -23,9 +23,9 @@ const resList = [
     },
   },
   {
-    id: 2,
     restaurant: {
       name: "Pizza Hut",
+      id: 2,
       img: "https://i.insider.com/5c000538bde70f6551407e6c?width=750&format=jpeg&auto=webp",
       location: {
         address: "789 Pizza Street",
@@ -46,9 +46,9 @@ const resList = [
     },
   },
   {
-    id: 3,
     restaurant: {
       name: "Burger King",
+      id: 3,
       img: "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/08/one-black-womanbk-comp-1296x728-header.jpg?w=1155&h=1528",
       location: {
         address: "123 Burger Avenue",
@@ -69,9 +69,9 @@ const resList = [
     },
   },
   {
-    id: 4,
     restaurant: {
       name: "Sushi Delight",
+      id: 4,
       img: "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       location: {
         address: "567 Sushi Lane",
@@ -92,9 +92,9 @@ const resList = [
     },
   },
   {
-    id: 5,
     restaurant: {
       name: "Mexican Fiesta",
+      id: 5,
       img: "https://imgmedia.lbb.in/media/2019/08/5d4fee8a1a7b2b1012e9b259_1565519498206.jpg",
       location: {
         address: "789 Taco Street",
@@ -115,9 +115,9 @@ const resList = [
     },
   },
   {
-    id: 6,
     restaurant: {
       name: "Veggie Delight",
+      id: 6,
       img: "https://content.jdmagicbox.com/comp/bangalore/s5/080pxx80.xx80.180910170021.j6s5/catalogue/north-indian-food-gandhi-nagar-bangalore-fast-food-upy53jysfl.jpg?clr=#524614",
       location: {
         address: "234 Green Street",
@@ -138,9 +138,9 @@ const resList = [
     },
   },
   {
-    id: 7,
     restaurant: {
       name: "Taco Haven",
+      id: 7,
       img: "https://media.istockphoto.com/id/1024558722/photo/group-of-south-indian-food-like-masala-dosa-uttapam-idli-idly-wada-vada-sambar-appam-semolina.jpg?s=612x612&w=0&k=20&c=cbuPAUzlnqlnXhZAa2NbLoSHLUi6OEaVFayHKRAYO7E=",
       location: {
         address: "876 Taco Avenue",
@@ -161,9 +161,9 @@ const resList = [
     },
   },
   {
-    id: 8,
     restaurant: {
       name: "Deli Delight",
+      id: 8,
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bambayya_Pav_bhaji.jpg/640px-Bambayya_Pav_bhaji.jpg",
       location: {
         address: "567 Deli Street",
@@ -184,9 +184,9 @@ const resList = [
     },
   },
   {
-    id: 9,
     restaurant: {
       name: "Curry House",
+      id: 9,
       img: "https://redhousespice.com/wp-content/uploads/2021/12/whole-spring-rolls-and-halved-ones-scaled.jpg",
       location: {
         address: "789 Curry Lane",
@@ -207,9 +207,9 @@ const resList = [
     },
   },
   {
-    id: 10,
     restaurant: {
       name: "Seafood Cove",
+      id: 10,
       img: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/09/dosa-recipe.jpg.webp",
       location: {
         address: "876 Seafood Avenue",
@@ -230,9 +230,9 @@ const resList = [
     },
   },
   {
-    id: 11,
     restaurant: {
       name: "Pasta Paradise",
+      id: 11,
       img: "https://www.acouplecooks.com/wp-content/uploads/2023/01/Red-Sauce-Pasta-008.jpg",
       location: {
         address: "234 Pasta Street",
@@ -253,9 +253,9 @@ const resList = [
     },
   },
   {
-    id: 12,
     restaurant: {
       name: "Dessert Dreams",
+      id: "12",
       img: "https://img.freepik.com/premium-photo/maharashtrian-food-thali-platter-mumbai-style-meal-from-indian_466689-5452.jpg",
       location: {
         address: "789 Sweet Street",
@@ -276,5 +276,4 @@ const resList = [
     },
   },
 ];
-const menu = [];
 export default resList;
