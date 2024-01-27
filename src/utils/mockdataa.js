@@ -1,7 +1,8 @@
 const menuList = [
   {
+    id: "1",
     info: {
-      id: "1",
+      // id: "1",
       name: "Taj Hotel",
       cloudinaryImageId: "85e6e427481332842d4413983ef45bdd",
       items: [
@@ -80,12 +81,25 @@ const menuList = [
   },
   // Add 11 more restaurants following the same structure...
   {
+    id: "2",
     info: {
-      id: "2",
+      // id: "2",
       name: "Delicious Bites",
       cloudinaryImageId: "abc123def456",
       locality: "Downtown",
       areaName: "City Center",
+      items: [
+        "Chicken",
+        "Biryani",
+        "Paneer Tikka",
+        "Butter Chicken",
+        "Dal Makhani",
+        "Tandoori Roti",
+        "Samosa",
+        "Chole Bhature",
+        "Rajma Chawal",
+        "Aloo Paratha",
+      ],
       costForTwo: "₹250 for two",
       cuisines: ["Italian", "Pizza"],
       avgRating: 4.2,
@@ -152,6 +166,18 @@ const menuList = [
       id: "3",
       name: "Spice Haven",
       cloudinaryImageId: "xyz987uvw654",
+      items: [
+        "Chicken",
+        "Biryani",
+        "Paneer Tikka",
+        "Butter Chicken",
+        "Dal Makhani",
+        "Tandoori Roti",
+        "Samosa",
+        "Chole Bhature",
+        "Rajma Chawal",
+        "Aloo Paratha",
+      ],
       locality: "Spice Street",
       areaName: "Flavor Town",
       costForTwo: "₹200 for two",

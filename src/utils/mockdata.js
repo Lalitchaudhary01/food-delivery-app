@@ -1,8 +1,10 @@
 const resList = [
   {
+    id: "1",
+
     restaurant: {
       name: "KFC",
-      id: 1,
+      // id: "1",
       img: "https://b.zmtcdn.com/data/pictures/7/20287/825ff4ef3e2c838e767392ca8de5cefd.jpg?fit=around|750:500&crop=750:500;*,*",
       location: {
         address: "456 Zomato Avenue",
@@ -23,9 +25,10 @@ const resList = [
     },
   },
   {
+    id: "1",
     restaurant: {
       name: "Pizza Hut",
-      id: 2,
+      // id: "2",
       img: "https://i.insider.com/5c000538bde70f6551407e6c?width=750&format=jpeg&auto=webp",
       location: {
         address: "789 Pizza Street",
