@@ -4,6 +4,7 @@ import resList from "../utils/mockdata";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listofRestaurant, setlistofRestaurant] = useState(resList);
@@ -23,7 +24,15 @@ const Body = () => {
   //   setListofRestaurant(json.data.cards[2].thirdCard.data.data.cards);
   //   setFilteredRestaurant(json.data.cards[2].thirdCard.data.data.cards);
   // };
-  if (!filteredRestaurant) return null;
+
+  const onlineStatus = useOnlineStatus();
+
+  useEffect(() => {
+    if (!onlineStatus) {
+      // Handle offline state
+      console.log("Looks like you're offline!");
+    }
+  }, [onlineStatus]);
 
   return listofRestaurant?.length === 0 ? (
     <Shimmer />
