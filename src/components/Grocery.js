@@ -1,5 +1,5 @@
 import React from "react";
-import { lazy } from "react";
+
 const Grocery = () => {
   return (
     <div>

@@ -14,7 +14,9 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Online Status: {onlineStatus ? "✅" : "❌"}</li>
+          <li className="online-status">
+            Online Status: {onlineStatus ? "✅" : "❌"}
+          </li>
           <li>
             <Link to="/home">Home</Link>
           </li>

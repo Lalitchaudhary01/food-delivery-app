@@ -1,5 +1,5 @@
 import React from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromtedLabel } from "./RestaurantCard";
 import resList from "../utils/mockdata";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -10,6 +10,8 @@ const Body = () => {
   const [listofRestaurant, setlistofRestaurant] = useState(resList);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
+
+  const RestaurantCardPromoted = withPromtedLabel(RestaurantCard);
 
   // useEffect(() => {
   //   fetchData();
@@ -81,6 +83,7 @@ const Body = () => {
       <div className="res-container">
         {listofRestaurant.map((restaurant, index) => (
           <Link key={index} to={`/restaurants/${index}`}>
+            <RestaurantCardPromoted resData={restaurant} />
             <RestaurantCard resData={restaurant} />
           </Link>
         ))}

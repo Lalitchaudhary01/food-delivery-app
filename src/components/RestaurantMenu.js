@@ -14,7 +14,7 @@ const RestaurantMenu = () => {
   const { name, cuisines, costForTwo, items } = resInfo;
 
   return (
-    <div>
+    <div className="restaurant-menu">
       <h1>{name}</h1>
       <h3>{cuisines.join(", ")}</h3>
       <p>{costForTwo}</p>

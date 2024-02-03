@@ -8,7 +8,7 @@ const useOnlineStatus = () => {
       setOnlineStatus(false);
     });
     window.addEventListener("offline", () => {
-      setOnlineStatus(true);
+      setOnlineStatus(true); 
     });
   }, []);
 
