@@ -1,6 +1,9 @@
+// RestaurantMenu.js
+
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
+import RestaurantCategory from "./RestaurantCate";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -15,13 +18,24 @@ const RestaurantMenu = () => {
 
   return (
     <div className="restaurant-menu">
-      <h1>{name}</h1>
-      <h3>{cuisines.join(", ")}</h3>
-      <p>{costForTwo}</p>
-      <h2>Menu</h2>
-      <ul>
+      <div className="restaurant-header">
+        <div>
+          <h1 className="restaurant-name">{name}</h1>
+          <h3 className="restaurant-cuisines">{cuisines.join(", ")}</h3>
+          <p className="restaurant-cost">{costForTwo}</p>
+        </div>
+      </div>
+
+      <h2 className="menu">
+        {/* Render RestaurantCategory component here */}
+        <RestaurantCategory />
+      </h2>
+
+      <ul className="menu-list">
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="menu-item">
+            <h3>{item}</h3>
+          </li>
         ))}
       </ul>
     </div>

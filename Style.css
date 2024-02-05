@@ -12,7 +12,7 @@ body, h1, h2, h3, p, ul, li {
   
   /* Header Styles */
   .header {
-    background-color: #10b954;
+    background-color: #86c39e;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -56,6 +56,7 @@ body, h1, h2, h3, p, ul, li {
   /* Body Styles */
   .body {
     padding: 20px;
+    background-color: #555;
   }
   
   .filter {
@@ -68,6 +69,7 @@ body, h1, h2, h3, p, ul, li {
   .search {
     display: flex;
     gap: 10px;
+    margin-left: 10px;
   }
   
   .search-box {
@@ -86,16 +88,18 @@ body, h1, h2, h3, p, ul, li {
   .res-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
+    margin-left: 32px;
   }
   
   /* Restaurant Card Styles */
   .res-card {
-    background-color: #f0f0f0;
+    background-color: #e2e0e0;
     padding: 20px;
     width: 200px;
     height: 300px;
-    border-radius: 8px;
+    margin: 20px;
+    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
@@ -132,40 +136,79 @@ body, h1, h2, h3, p, ul, li {
 
 /* RestaurantMenu Component Styles */
 .restaurant-menu {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 400px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  margin-left: 33%;
 }
 
-.restaurant-menu h1 {
-  color: #333;
+.restaurant-header {
+  padding: 20px;
+  background-color: #525354;
 }
 
-.restaurant-menu h3 {
-  color: #777;
+.restaurant-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.restaurant-menu p {
-  color: #555;
+.restaurant-cuisines {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.restaurant-menu h2 {
-  color: #ff4500;
+.restaurant-cost {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #28a745;
 }
 
-.restaurant-menu ul {
+.menu-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.restaurant-menu li {
-  margin: 10px 0;
-  color: #444;
+.menu-item {
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
 }
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+/* Add Bootstrap Stylesheet Link in your HTML for Bootstrap 5 */
+
+/* Custom Styles */
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.accordion-button.collapsed {
+  background-color: #6c757d;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+}
+
+
 
   
   /* Add more styles as needed */
