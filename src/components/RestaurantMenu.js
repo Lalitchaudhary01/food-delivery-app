@@ -4,6 +4,15 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCate";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
+
+const dispatch = useDispatch;
+
+const handleAddItems = () => {
+  //dispatch an action
+  dispatch(addItem("pizza"));
+};
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -23,6 +32,7 @@ const RestaurantMenu = () => {
           <h1 className="restaurant-name">{name}</h1>
           <h3 className="restaurant-cuisines">{cuisines.join(", ")}</h3>
           <p className="restaurant-cost">{costForTwo}</p>
+          <button onClick={handleAddItems}>ADD</button>
         </div>
       </div>
 

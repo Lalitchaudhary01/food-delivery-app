@@ -12,8 +12,8 @@ const Header = () => {
 
   const { loggedInUser } = useContext(UserContext);
 
-  //subscribinf to th e store using a selector
-  const cart = useSelector((store) => store.cart.item);
+  //selector
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="header">
@@ -37,7 +37,7 @@ const Header = () => {
           <li>
             <Link to="/grocery">Grocery Store</Link>
           </li>
-          <li>Cart (0 items)</li>
+          <li>Cart ({cartItems.length} items)</li>
           <button
             className="login"
             onClick={() => {
