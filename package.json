@@ -26,8 +26,12 @@
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
     "@babel/preset-react": "^7.23.3",
+    "@eslint/js": "^9.0.0",
     "autoprefixer": "^10.4.17",
     "babel-eslint": "^10.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.0.0",
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.4.33",
     "tailwindcss": "^2.2.19"
